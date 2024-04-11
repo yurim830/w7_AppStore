@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-dM-y5o">
+                                <rect key="frame" x="10" y="59" width="329.33333333333331" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rI-Gs-kb0">
+                                <rect key="frame" x="339.33333333333331" y="69.666666666666671" width="53.666666666666686" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ePL-fG-xXQ">
+                                <rect key="frame" x="0.0" y="125" width="393" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPF-Ee-kBr">
+                                <rect key="frame" x="0.0" y="763" width="393" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="lvJ-m3-wHO"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="투데이" image="doc.text.image" catalog="system" id="CQr-ar-UpO"/>
+                                    <tabBarItem title="게임" image="gamecontroller.fill" catalog="system" id="b22-FI-Bgy"/>
+                                    <tabBarItem title="앱" image="square.stack.3d.up.fill" catalog="system" id="oQa-Db-hWD"/>
+                                    <tabBarItem title="Arcade" image="arcade.stick" catalog="system" id="VYG-Ti-8cH"/>
+                                    <tabBarItem title="검색" image="magnifyingglass" catalog="system" id="l4l-6B-blh"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fPF-Ee-kBr" secondAttribute="trailing" id="1ha-M9-Htt"/>
+                            <constraint firstItem="7rI-Gs-kb0" firstAttribute="centerY" secondItem="xcY-dM-y5o" secondAttribute="centerY" id="9Kj-Tt-W7Z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ePL-fG-xXQ" secondAttribute="trailing" id="Buz-iA-PXd"/>
+                            <constraint firstItem="fPF-Ee-kBr" firstAttribute="top" secondItem="ePL-fG-xXQ" secondAttribute="bottom" id="GN0-b1-4Ye"/>
+                            <constraint firstItem="xcY-dM-y5o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="K4Y-af-ihZ"/>
+                            <constraint firstItem="7rI-Gs-kb0" firstAttribute="leading" secondItem="xcY-dM-y5o" secondAttribute="trailing" id="MSf-ga-kUT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fPF-Ee-kBr" secondAttribute="bottom" id="MsR-um-MKo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7rI-Gs-kb0" secondAttribute="trailing" id="PKC-KJ-Q4o"/>
+                            <constraint firstItem="xcY-dM-y5o" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="VWO-sF-5os"/>
+                            <constraint firstItem="ePL-fG-xXQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cSs-t8-FD7"/>
+                            <constraint firstItem="ePL-fG-xXQ" firstAttribute="top" secondItem="xcY-dM-y5o" secondAttribute="bottom" constant="10" id="iiV-zj-gJx"/>
+                            <constraint firstItem="fPF-Ee-kBr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="na1-QN-3G8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arcade.stick" catalog="system" width="88" height="128"/>
+        <image name="doc.text.image" catalog="system" width="115" height="128"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="79"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="120" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
