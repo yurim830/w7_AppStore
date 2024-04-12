@@ -15,6 +15,9 @@ class AppStoreTableViewCell: UITableViewCell {
     @IBOutlet weak var appScreen1: UIImageView!
     @IBOutlet weak var appScreen2: UIImageView!
     @IBOutlet weak var appScreen3: UIImageView!
+    @IBOutlet weak var chartLabel: UILabel!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,9 +31,10 @@ class AppStoreTableViewCell: UITableViewCell {
         super.layoutSubviews()
         setPreviewImageSize()
         setPreviewImageShape()
+        setChartLabelBoundary()
     }
     
-    // MARK: - set preview image
+    // MARK: - preview image layout
     func setPreviewImageSize() {
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
@@ -52,4 +56,15 @@ class AppStoreTableViewCell: UITableViewCell {
         appScreen2.layer.cornerRadius = 10
         appScreen3.layer.cornerRadius = 10
     }
+    
+    
+    // MARK: - set label layout
+    func setChartLabelBoundary() {
+        chartLabel.layer.borderWidth = 1
+        chartLabel.layer.borderColor = UIColor.systemGray.cgColor
+        chartLabel.layer.cornerRadius = 3
+    }
+    
+    
+    
 }
