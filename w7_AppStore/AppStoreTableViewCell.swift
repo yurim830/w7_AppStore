@@ -10,6 +10,8 @@ import UIKit
 class AppStoreTableViewCell: UITableViewCell {
     
     static let identifier = "AppStoreTableViewCell"
+    
+    @IBOutlet weak var appScreenView: UIView!
     @IBOutlet weak var appScreen1: UIImageView!
     @IBOutlet weak var appScreen2: UIImageView!
     @IBOutlet weak var appScreen3: UIImageView!
@@ -24,14 +26,14 @@ class AppStoreTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        //setImageSize()
+        setImageSize()
     }
     
     func setImageSize() {
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
         let imageWidth = (width - (30 + 20)) / 3
-        let imageHeight = imageWidth / (width * height)
+        let imageHeight = height / width * imageWidth
         
         NSLayoutConstraint.activate([
             appScreen1.widthAnchor.constraint(equalToConstant: imageWidth),
