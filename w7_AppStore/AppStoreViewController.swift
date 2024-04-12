@@ -16,6 +16,13 @@ class AppStoreViewController: UIViewController {
         tableView.register(UINib(nibName: AppStoreTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: AppStoreTableViewCell.identifier) // 셀 등록
         tableView.dataSource = self
     }
+    
+    // 뷰 높이, 너비 구하기
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+//        let width = UIScreen.main.bounds.width
+//        let height = UIScreen.main.bounds.height
+    }
 }
 
 extension AppStoreViewController: UITableViewDataSource {
