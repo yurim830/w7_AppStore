@@ -164,7 +164,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naverWT2" translatesAutoresizingMaskIntoConstraints="NO" id="GdW-Ba-oyd">
                                         <rect key="frame" x="101.66666666666666" y="0.0" width="91.666666666666657" height="142"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naverWT3" translatesAutoresizingMaskIntoConstraints="NO" id="FsT-r9-2sq">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naverWT3" translatesAutoresizingMaskIntoConstraints="NO" id="FsT-r9-2sq">
                                         <rect key="frame" x="203.33333333333334" y="0.0" width="91.666666666666657" height="142"/>
                                     </imageView>
                                 </subviews>

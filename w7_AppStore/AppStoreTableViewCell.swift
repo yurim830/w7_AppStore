@@ -26,10 +26,12 @@ class AppStoreTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        setImageSize()
+        setPreviewImageSize()
+        setPreviewImageShape()
     }
     
-    func setImageSize() {
+    // MARK: - set preview image
+    func setPreviewImageSize() {
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
         let imageWidth = (width - (30 + 20)) / 3
@@ -43,5 +45,11 @@ class AppStoreTableViewCell: UITableViewCell {
             appScreen3.widthAnchor.constraint(equalToConstant: imageWidth),
             appScreen3.heightAnchor.constraint(equalToConstant: imageHeight)
         ])
+    }
+    
+    func setPreviewImageShape() {
+        appScreen1.layer.cornerRadius = 10
+        appScreen2.layer.cornerRadius = 10
+        appScreen3.layer.cornerRadius = 10
     }
 }
