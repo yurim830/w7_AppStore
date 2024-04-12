@@ -92,7 +92,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="dvr-cb-Vdh"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -110,7 +110,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAVER WEBTOON Ltd." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxG-HL-Daq">
                                                 <rect key="frame" x="19.000000000000014" y="0.0" width="69.333333333333329" height="15"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -119,15 +119,26 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tu8-th-Wx7">
                                         <rect key="frame" x="206.66666666666666" y="0.0" width="88.333333333333343" height="15"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzF-Xt-Der" userLabel="Chart Label View">
+                                                <rect key="frame" x="-7.6666666666666572" y="-0.3333333333333286" width="23.333333333333332" height="15.666666666666666"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b18-JL-3lH">
+                                                        <rect key="frame" x="4.0000000000000009" y="2" width="15.333333333333336" height="11.666666666666666"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
+                                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="b18-JL-3lH" secondAttribute="trailing" constant="4" id="Tzh-qV-6qq"/>
+                                                    <constraint firstItem="b18-JL-3lH" firstAttribute="leading" secondItem="gzF-Xt-Der" secondAttribute="leading" constant="4" id="c3F-Xr-JTF"/>
+                                                    <constraint firstItem="b18-JL-3lH" firstAttribute="top" secondItem="gzF-Xt-Der" secondAttribute="top" constant="2" id="nJ0-fu-dr7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="b18-JL-3lH" secondAttribute="bottom" constant="2" id="rxD-uJ-7b8"/>
+                                                </constraints>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="엔터테인먼트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUM-gy-aXE">
                                                 <rect key="frame" x="20.666666666666686" y="-0.3333333333333286" width="67.666666666666671" height="15.666666666666666"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                                <color key="textColor" systemColor="systemGrayColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b18-JL-3lH">
-                                                <rect key="frame" x="-5.3333333333333144" y="-0.3333333333333286" width="21" height="15.666666666666666"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -136,8 +147,10 @@
                                         <constraints>
                                             <constraint firstItem="GUM-gy-aXE" firstAttribute="centerY" secondItem="tu8-th-Wx7" secondAttribute="centerY" id="Crl-pv-KI1"/>
                                             <constraint firstAttribute="trailing" secondItem="GUM-gy-aXE" secondAttribute="trailing" id="Hxb-Z0-yxh"/>
-                                            <constraint firstItem="b18-JL-3lH" firstAttribute="centerY" secondItem="GUM-gy-aXE" secondAttribute="centerY" id="byW-0I-FcO"/>
-                                            <constraint firstItem="GUM-gy-aXE" firstAttribute="leading" secondItem="b18-JL-3lH" secondAttribute="trailing" constant="5" id="f5x-pr-1B2"/>
+                                            <constraint firstItem="GUM-gy-aXE" firstAttribute="leading" secondItem="gzF-Xt-Der" secondAttribute="trailing" constant="5" id="T8b-qD-9nx"/>
+                                            <constraint firstItem="gzF-Xt-Der" firstAttribute="centerY" secondItem="GUM-gy-aXE" secondAttribute="centerY" id="UxK-CA-5dN"/>
+                                            <constraint firstItem="gzF-Xt-Der" firstAttribute="bottom" secondItem="GUM-gy-aXE" secondAttribute="bottom" id="dhc-vU-ViI"/>
+                                            <constraint firstItem="gzF-Xt-Der" firstAttribute="top" secondItem="GUM-gy-aXE" secondAttribute="top" id="nhy-6j-yrY"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -203,6 +216,7 @@
                 <outlet property="appScreen3" destination="FsT-r9-2sq" id="FMI-fj-nUI"/>
                 <outlet property="appScreenView" destination="YnJ-FY-txi" id="2yw-ZH-PVH"/>
                 <outlet property="chartLabel" destination="b18-JL-3lH" id="oV0-DJ-klr"/>
+                <outlet property="chartLabelView" destination="gzF-Xt-Der" id="Jgc-w4-6hC"/>
             </connections>
             <point key="canvasLocation" x="-52.671755725190835" y="69.366197183098592"/>
         </tableViewCell>

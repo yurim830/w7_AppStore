@@ -15,6 +15,7 @@ class AppStoreTableViewCell: UITableViewCell {
     @IBOutlet weak var appScreen1: UIImageView!
     @IBOutlet weak var appScreen2: UIImageView!
     @IBOutlet weak var appScreen3: UIImageView!
+    @IBOutlet weak var chartLabelView: UIView!
     @IBOutlet weak var chartLabel: UILabel!
     
     
@@ -31,7 +32,7 @@ class AppStoreTableViewCell: UITableViewCell {
         super.layoutSubviews()
         setPreviewImageSize()
         setPreviewImageShape()
-        setChartLabelBoundary()
+        setChartLabelView()
     }
     
     // MARK: - preview image layout
@@ -59,12 +60,11 @@ class AppStoreTableViewCell: UITableViewCell {
     
     
     // MARK: - set label layout
-    func setChartLabelBoundary() {
-        chartLabel.layer.borderWidth = 1
-        chartLabel.layer.borderColor = UIColor.systemGray.cgColor
-        chartLabel.layer.cornerRadius = 3
+    func setChartLabelView() {
+        chartLabelView.layer.borderWidth = 1.2
+        chartLabelView.layer.borderColor = UIColor.systemGray.cgColor
+        chartLabelView.layer.cornerRadius = 3
     }
-    
     
     
 }
