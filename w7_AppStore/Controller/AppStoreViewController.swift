@@ -14,10 +14,7 @@ class AppStoreViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.register(UINib(nibName: AppStoreTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: AppStoreTableViewCell.identifier) // 셀 등록
-        tableView.register(UINib(nibName: AppStoreTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: AppStoreTableViewCell.identifier)
-        tableView.dataSource = self
     }
-    
 }
 
 extension AppStoreViewController: UITableViewDataSource {
@@ -29,6 +26,7 @@ extension AppStoreViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: AppStoreTableViewCell.identifier, for: indexPath) as? AppStoreTableViewCell else {
             return UITableViewCell()
         }
+        cell.selectionStyle = .none
         return cell
     }
     

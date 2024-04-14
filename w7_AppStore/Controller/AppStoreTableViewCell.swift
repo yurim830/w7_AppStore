@@ -22,18 +22,34 @@ class AppStoreTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
         setPreviewImageSize()
         setPreviewImageShape()
         setChartLabelView()
     }
+    
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+//        setPreviewImageSize()
+//        setPreviewImageShape()
+//        setChartLabelView()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+//        setPreviewImageSize()
+//        setPreviewImageShape()
+//        setChartLabelView()
+    }
+    
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+//        setPreviewImageSize()
+//        setPreviewImageShape()
+//        setChartLabelView()
+    }
+
     
     // MARK: - preview image layout
     func setPreviewImageSize() {
