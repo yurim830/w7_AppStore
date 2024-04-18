@@ -18,24 +18,22 @@ class AppStoreTableViewCell: UITableViewCell {
     @IBOutlet weak var chartLabelView: UIView!
     @IBOutlet weak var chartLabel: UILabel!
     
-    
-    
-    override func awakeFromNib() {
+
+    override func awakeFromNib() { // xib에서 작업했을 경우 // 코드로만 그렸을 경우 init에서
         super.awakeFromNib()
-        setPreviewImageSize()
-        setPreviewImageShape()
-        setChartLabelView()
+        setupView()
+        setupConstraints()
     }
     
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
+
+    override func setSelected(_ selected: Bool, animated: Bool) { // 셀의 선택 여부에 따라 실행되는 함수
         super.setSelected(selected, animated: animated)
 //        setPreviewImageSize()
 //        setPreviewImageShape()
 //        setChartLabelView()
     }
     
-    override func prepareForReuse() {
+    override func prepareForReuse() { // 셀이 reuse 될 때만 불려옴 (바닥 찍을 때)
         super.prepareForReuse()
 //        setPreviewImageSize()
 //        setPreviewImageShape()
@@ -43,13 +41,21 @@ class AppStoreTableViewCell: UITableViewCell {
     }
     
     
-    override func layoutSubviews() {
+    override func layoutSubviews() { // 불리는 타이밍이 여러번, 예측불가.
         super.layoutSubviews()
 //        setPreviewImageSize()
 //        setPreviewImageShape()
 //        setChartLabelView()
     }
 
+    // setupView(), setupConstraints()로 묶자!!
+    func setupView() {
+        setPreviewImageShape()
+        setChartLabelView()
+    }
+    func setupConstraints() {
+        setPreviewImageSize()
+    }
     
     // MARK: - preview image layout
     func setPreviewImageSize() {
@@ -73,7 +79,6 @@ class AppStoreTableViewCell: UITableViewCell {
         appScreen2.layer.cornerRadius = 10
         appScreen3.layer.cornerRadius = 10
     }
-    
     
     // MARK: - set label layout
     func setChartLabelView() {

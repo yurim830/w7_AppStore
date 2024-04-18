@@ -60,6 +60,7 @@
 		1A0CD2DE2BC7B94E00271CFC /* w7_AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				1AD1D23E2BD14AD900ECF15A /* Model */,
 				1A5354612BCBBA8C00940403 /* View */,
 				1A5354622BCBBA9F00940403 /* Controller */,
 				1A0CD2DF2BC7B94E00271CFC /* AppDelegate.swift */,
@@ -87,6 +88,13 @@
 				1A085B012BC7F54C009AC421 /* AppStoreTableViewCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AD1D23E2BD14AD900ECF15A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
