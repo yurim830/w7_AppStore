@@ -30,7 +30,7 @@
 		1A0CD2EB2BC7B94F00271CFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A0CD2ED2BC7B94F00271CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AD1D2412BD14C1C00ECF15A /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
-		1AD1D2432BD14DF400ECF15A /* Apps.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Apps.json; sourceTree = "<group>"; };
+		1AD1D2432BD14DF400ECF15A /* AppsJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AppsJson.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD1D2412BD14C1C00ECF15A /* AppDetails.swift */,
-				1AD1D2432BD14DF400ECF15A /* Apps.json */,
+				1AD1D2432BD14DF400ECF15A /* AppsJson.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
