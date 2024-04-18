@@ -14,23 +14,29 @@ class AppStoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        apps = readJSONFromFile()
+        //apps = readJSONFromFile()
+        apps = tempApps
+        print(apps)
         tableView.dataSource = self
         tableView.register(UINib(nibName: AppStoreTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: AppStoreTableViewCell.identifier) // 셀 등록
     }
     
     // MARK: - Json에서 파일 읽어오는 함수
     func readJSONFromFile() -> [AppDetails]? {
-        guard let path = Bundle.main.path(forResource: "AppsJson", ofType: "json") else { return nil }
-        do {
-            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) // error thrown
-            let decoder = JSONDecoder()
-            let apps = try decoder.decode([AppDetails].self, from: data) // error thrown
-            return apps
-        } catch {
-            print("Error reading JSON file: \(error)")
-            return nil
+        print("read!")
+        if let path = Bundle.main.path(forResource: "AppsJson", ofType: "json") {
+            print("got file path")
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) // error thrown
+                let decoder = JSONDecoder()
+                let appArr = try decoder.decode(Apps.self, from: data) // error thrown
+                return appArr.apps
+            } catch {
+                print("Error reading JSON file: \(error)")
+                return nil
+            }
         }
+        return nil
     }
 }
 
@@ -45,6 +51,7 @@ extension AppStoreViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.selectionStyle = .none
+        cell.configure(self.apps![indexPath.row])
         return cell
     }
     

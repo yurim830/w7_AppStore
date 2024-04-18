@@ -1,0 +1,93 @@
+//
+//  AppsData.swift
+//  w7_AppStore
+//
+//  Created by 유림 on 4/18/24.
+//
+
+import Foundation
+
+var tempApps = [AppDetails(id: 1,
+                       title: "네이버 웹툰 - Naver Webtoon",
+                       subTitle: "엔터테인먼트",
+                       stars: 5,
+                       evaluationCount: "29만",
+                       developer: "NAVER WEBTOON Ltd.",
+                       chart: 14,
+                       category: "엔터테인먼트",
+                       icon: "naverWT_icon",
+                       images: [
+                         "naverWT1",
+                         "naverWT2",
+                         "naverWT3"
+                         ]
+                      ),
+            AppDetails(id: 2,
+                       title: "카카오웹툰 - KAKAO WEBTOON",
+                       subTitle: "끝없는 이야기",
+                       stars: 4,
+                       evaluationCount: "2.8만",
+                       developer: "Kakao Entertainment Corp.",
+                       chart: 38,
+                       category: "엔터테인먼트",
+                       icon: "kkoWT_icon",
+                       images: [
+                        "kkoWT1",
+                        "kkoWT2",
+                        "kkoWT3"
+                           ]
+                      ),
+                AppDetails(
+                    id: 3,
+                    title: "SERIES - 네이버 시리즈",
+                    subTitle: "네이버 시리즈에서 인생작을 만나다",
+                    stars: 5,
+                    evaluationCount: "8.3만",
+                    developer: "NAVER WEBTOON Ltd.",
+                    chart: 2,
+                    category: "엔터테인먼트",
+                    icon: "naverS_icon",
+                    images: [
+                      "naverS1",
+                      "naverS2",
+                      "naverS3"
+                      ]
+                )
+            ]
+    
+
+//let a =
+//    {
+//      "id": 2,
+//      "title": "카카오웹툰 - KAKAO WEBTOON",
+//      "subTitle": "끝없는 이야기",
+//      "stars": 4,
+//      "evaluationCount": "2.8만",
+//      "developer": "Kakao Entertainment Corp.",
+//      "chart": 38,
+//      "category": "엔터테인먼트",
+//      "icon": "kkoWT_icon",
+//      "images": [
+//        "kkoWT1",
+//        "kkoWT2",
+//        "kkoWT3"
+//        ]
+//    },
+//    {
+//      "id": 3,
+//      "title": "SERIES - 네이버 시리즈",
+//      "subTitle": "네이버 시리즈에서 인생작을 만나다",
+//      "stars": 5,
+//      "evaluationCount": "8.3만",
+//      "developer": "NAVER WEBTOON Ltd.",
+//      "chart": 2,
+//      "category": "엔터테인먼트",
+//      "icon": "naverS_icon"
+//      "images": [
+//        "naverS1",
+//        "naverS2",
+//        "naverS3"
+//        ]
+//      }
+//    ]
+

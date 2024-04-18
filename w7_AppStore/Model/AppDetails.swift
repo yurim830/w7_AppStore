@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Apps: Codable {
+    let apps: [AppDetails]
+}
+
 struct AppDetails: Codable {
     let id: Int
     let title: String

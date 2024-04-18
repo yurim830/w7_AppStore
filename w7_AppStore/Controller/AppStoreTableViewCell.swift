@@ -57,13 +57,14 @@ class AppStoreTableViewCell: UITableViewCell {
     // setupView(), setupConstraints()로 묶자!!
     func setupView() {
         setPreviewImageShape()
+        setIconImageShape()
         setChartLabelView()
     }
     func setupConstraints() {
         setPreviewImageSize()
     }
     
-    // MARK: - preview image layout
+    // MARK: - image layout
     func setPreviewImageSize() {
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
@@ -81,9 +82,12 @@ class AppStoreTableViewCell: UITableViewCell {
     }
     
     func setPreviewImageShape() {
-        appScreen1.layer.cornerRadius = 10
-        appScreen2.layer.cornerRadius = 10
-        appScreen3.layer.cornerRadius = 10
+        appScreen1.layer.cornerRadius = 20
+        appScreen2.layer.cornerRadius = 20
+        appScreen3.layer.cornerRadius = 20
+    }
+    func setIconImageShape() {
+        appIcon.layer.cornerRadius = 15
     }
     
     // MARK: - set label layout

@@ -9,7 +9,7 @@
         "developer": "NAVER WEBTOON Ltd.",
         "chart": 14,
         "category": "엔터테인먼트",
-        "icon": "naverWT_icon"
+        "icon": "naverWT_icon",
         "images": [
           "naverWT1",
           "naverWT2",
@@ -25,7 +25,7 @@
         "developer": "Kakao Entertainment Corp.",
         "chart": 38,
         "category": "엔터테인먼트",
-        "icon": "kkoWT_icon"
+        "icon": "kkoWT_icon",
         "images": [
           "kkoWT1",
           "kkoWT2",
@@ -41,7 +41,7 @@
         "developer": "NAVER WEBTOON Ltd.",
         "chart": 2,
         "category": "엔터테인먼트",
-        "icon": "naverS_icon"
+        "icon": "naverS_icon",
         "images": [
           "naverS1",
           "naverS2",
