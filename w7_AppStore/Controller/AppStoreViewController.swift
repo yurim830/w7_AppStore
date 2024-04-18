@@ -11,6 +11,7 @@ class AppStoreViewController: UIViewController {
     var apps: [AppDetails]?
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tabBar: UITabBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,7 @@ class AppStoreViewController: UIViewController {
         print(apps)
         tableView.dataSource = self
         tableView.register(UINib(nibName: AppStoreTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: AppStoreTableViewCell.identifier) // 셀 등록
+        tabBar.selectedItem = tabBar.items![2]
     }
     
     // MARK: - Json에서 파일 읽어오는 함수

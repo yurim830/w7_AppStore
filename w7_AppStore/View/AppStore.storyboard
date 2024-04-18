@@ -62,6 +62,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tabBar" destination="fPF-Ee-kBr" id="zrr-Fx-NyK"/>
                         <outlet property="tableView" destination="ePL-fG-xXQ" id="LYS-OM-Grp"/>
                     </connections>
                 </viewController>
