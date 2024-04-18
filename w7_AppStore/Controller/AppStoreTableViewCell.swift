@@ -11,12 +11,18 @@ class AppStoreTableViewCell: UITableViewCell {
     
     static let identifier = "AppStoreTableViewCell"
     
-    @IBOutlet weak var appScreenView: UIView!
+    @IBOutlet weak var appIcon: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
+    @IBOutlet weak var evaluationCountLabel: UILabel!
+    @IBOutlet weak var developerLabel: UILabel!
+    @IBOutlet weak var chartLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var appScreen1: UIImageView!
     @IBOutlet weak var appScreen2: UIImageView!
     @IBOutlet weak var appScreen3: UIImageView!
     @IBOutlet weak var chartLabelView: UIView!
-    @IBOutlet weak var chartLabel: UILabel!
+
     
 
     override func awakeFromNib() { // xib에서 작업했을 경우 // 코드로만 그렸을 경우 init에서
@@ -87,5 +93,17 @@ class AppStoreTableViewCell: UITableViewCell {
         chartLabelView.layer.cornerRadius = 3
     }
     
-    
+   
+    func configure(_ app: AppDetails) {
+        self.appIcon.image = UIImage(named: app.icon)
+        self.titleLabel.text = app.title
+        self.subTitleLabel.text = app.subTitle
+        self.evaluationCountLabel.text = app.evaluationCount
+        self.developerLabel.text = app.developer
+        self.chartLabel.text = String(app.chart)
+        self.categoryLabel.text = app.category
+        self.appScreen1.image = UIImage(named: app.images[0])
+        self.appScreen2.image = UIImage(named: app.images[1])
+        self.appScreen3.image = UIImage(named: app.images[2])
+    }
 }

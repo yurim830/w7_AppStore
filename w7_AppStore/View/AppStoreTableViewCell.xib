@@ -211,12 +211,17 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="appIcon" destination="wiv-kk-Hn4" id="Ry6-FX-GN7"/>
                 <outlet property="appScreen1" destination="e6Z-fk-DuU" id="Wun-Yh-eSl"/>
                 <outlet property="appScreen2" destination="GdW-Ba-oyd" id="sjO-7O-uw6"/>
                 <outlet property="appScreen3" destination="FsT-r9-2sq" id="FMI-fj-nUI"/>
-                <outlet property="appScreenView" destination="YnJ-FY-txi" id="2yw-ZH-PVH"/>
+                <outlet property="categoryLabel" destination="GUM-gy-aXE" id="3CK-Ql-V5v"/>
                 <outlet property="chartLabel" destination="b18-JL-3lH" id="oV0-DJ-klr"/>
                 <outlet property="chartLabelView" destination="gzF-Xt-Der" id="Jgc-w4-6hC"/>
+                <outlet property="developerLabel" destination="WxG-HL-Daq" id="EKU-0r-NPf"/>
+                <outlet property="evaluationCountLabel" destination="e6i-yH-vyQ" id="Jfj-mo-PfU"/>
+                <outlet property="subTitleLabel" destination="9Wf-sk-0Th" id="pAn-O2-5HD"/>
+                <outlet property="titleLabel" destination="7ir-lc-aZM" id="6qb-xf-bRS"/>
             </connections>
             <point key="canvasLocation" x="-52.671755725190835" y="69.366197183098592"/>
         </tableViewCell>

@@ -8,7 +8,7 @@
         "evaluationCount": "29만",
         "developer": "NAVER WEBTOON Ltd.",
         "chart": 14,
-        "catagory": "엔터테인먼트",
+        "category": "엔터테인먼트",
         "icon": "naverWT_icon"
         "images": [
           "naverWT1",
@@ -24,7 +24,7 @@
         "evaluationCount": "2.8만",
         "developer": "Kakao Entertainment Corp.",
         "chart": 38,
-        "catagory": "엔터테인먼트",
+        "category": "엔터테인먼트",
         "icon": "kkoWT_icon"
         "images": [
           "kkoWT1",
@@ -40,7 +40,7 @@
         "evaluationCount": "8.3만",
         "developer": "NAVER WEBTOON Ltd.",
         "chart": 2,
-        "catagory": "엔터테인먼트",
+        "category": "엔터테인먼트",
         "icon": "naverS_icon"
         "images": [
           "naverS1",

@@ -12,11 +12,10 @@ struct AppDetails: Codable {
     let title: String
     let subTitle: String
     let stars: Int
-    let evaluationCount: Int
+    let evaluationCount: String
     let developer: String
     let chart: Int
-    let catagory: String
+    let category: String
     let icon: String
-    let images: String
+    let images: [String]
 }
-
